@@ -2,5 +2,10 @@
 
 ## Before run the code:
 ```
-aaa
+pip install -U tensorflow keras opencv-python
+
+pip3 install imageai --upgrade
+
+git clone https://github.com/kySheryl/Mapleseed_Machine-Learning.git
+
 ```
