@@ -6,7 +6,7 @@ execution_path = os.getcwd()
 prediction = ImagePrediction()
 prediction.setModelTypeAsResNet()
 prediction.setModelPath(os.path.join(execution_path, "resnet50_weights_tf_dim_ordering_tf_kernels.h5"))
-prediction.loadModel(prediction_speed="fast") # normal, fast, faster
+prediction.loadModel(prediction_speed="normal") # normal, fast, faster
 
 predictions, probabilities = prediction.predictImage(os.path.join(execution_path, "1.jpg"), result_count=5 )
 for eachPrediction, eachProbability in zip(predictions, probabilities):
